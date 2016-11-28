@@ -21,6 +21,11 @@
 		<link rel="stylesheet" href="http://cdn.knightlab.com/libs/purpleline/latest/css/font-awesome/font-awesome.css" />
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<script>
+		document.querySelector("button").addEventListener("click", function(){
+		    document.querySelector("TheProblem").style.display = "block";
+		</script>
+
 	</head>
 
 	<body>
@@ -40,18 +45,18 @@
 
 		<ul class="side-nav">
     <li role="menuitem"><a href="#The Problem">The Problem</a></li>
-		<div class="The Problem">
+		<div style="display, none" id="The Problem">
 			<h4>Data is hard to contextualize.</h4> Let's walk through your average scenario exploring economic data. First, you might search for a term on FRED or another economic database. If you're analytically savvy, you might know how to interpret the graph you’re given. But generally, your search starts and ends with one graph, often lacking context for its curves.
 			But what if there was a tool that allowed you to discover contextual clues about economic data? Meet Comparallel.</p>
 
     <li role="menuitem"><a href="#The Solution">The Solution</a></li>
-		<div class="The Solution">
+		<div id="The Solution">
 			<p><h4>We want to help you better interpret data.</h4> When you search for an economic dataset, Comparallel will provide you with a list of correlated datasets, ranked from highest to the lowest based upon number of correlations. Graphs of the correlated datasets will be displayed below the original dataset’s graph and each of the correlated datasets will highlight “key correlation areas.” Upon clicking these areas, a related Google search will open with automated tags related to your datasets. While correlations are not causations, Comparallel inspires you to start exploring whether these datasets may be related.</p>
 
     <li role="menuitem"><a href="#Features">Features</a></li>
 		<h1>What is included in Comparallel?</h1>
 		<ul>
-		<li><b>Correlated graphs:</b> For each dataset searched, a list of correlated datasets appear below. You can explore the suggested list or click on another dataset to see its recommended list. By having a generated list of datasets for each economic indice, it allows you to explore a variety of factors. You will also be able to see where the strongest correlations exist between data. Time increments will remain consistent between graphs and all axes and graphs will be labeled.</li>
+		<p><h4>Correlated graphs:</h4> For each dataset searched, a list of correlated datasets appear below. You can explore the suggested list or click on another dataset to see its recommended list. By having a generated list of datasets for each economic indice, it allows you to explore a variety of factors. You will also be able to see where the strongest correlations exist between data. Time increments will remain consistent between graphs and all axes and graphs will be labeled.</p>
 
 <li><b>Zoom/“Scalability”:</b> Double-click on a key correlated area in order to zoom in and see granular data. This allows you to observe week-to-week changes in data rather than simply looking at big-scale trends.</li>
 
@@ -78,4 +83,6 @@
 
 <li><a href="https://segal.northwestern.edu/people/profiles/rane-saurabh.html">Saurabh Rane </a>is a first-year Masters student studying Engineering Design Innovation at Northwestern. His interests include human-centered design, data visualization, and product design.</li>
 </ul>
+</body>
+
 </html>
